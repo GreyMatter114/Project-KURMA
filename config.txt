@@ -1,0 +1,32 @@
+# Parameters for the NEAT algorithm
+[NEAT]
+fitness_criterion = max
+fitness_threshold = 1000
+pop_size = 100
+reset_on_extinction = False
+
+[DefaultGenome]
+# Node activation options
+activation_default = sigmoid
+activation_mutate_rate = 0.0
+activation_options = sigmoid
+
+# Connection weight options
+weight_mutation_power = 2.5
+weight_replace_rate = 0.1
+weight_mutate_rate = 0.3
+weight_max_value = 30
+weight_min_value = -30
+
+[DefaultSpecies]
+compatibility_threshold = 3.0
+compatibility_threshold_modifier = 0.3
+
+# Stagnation
+max_stagnation = 20
+species_fitness_func = max
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation = 20
+species_elitism = 2
