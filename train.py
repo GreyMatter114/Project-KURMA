@@ -4,7 +4,6 @@ import pickle
 #import RPi.GPIO as GPIO
 from utils.constants import *
 # Set up GPIO pin numbers for motor, servo, and vacuum pump
-
 # Initialize the GPIO
 def setup_gpio():
     # GPIO.setmode(GPIO.BCM)
