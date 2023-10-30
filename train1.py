@@ -1,7 +1,7 @@
 import neat
 import pickle
 from utils.simulation import *  # Import your Gym environment
-from train import Robot  # Import your robot class
+from infra import Robot  # Import your robot class
 from capture import captures  # Import your captures function
 from utils.constants import *
 # Set up NEAT configuration
