@@ -1,6 +1,4 @@
-import neat
-from capture import captures  # Assuming this function captures obstacle info
-import pickle
+#from capture import captures  # Assuming this function captures obstacle info
 #import RPi.GPIO as GPIO
 from utils.constants import *
 # Set up GPIO pin numbers for motor, servo, and vacuum pump
@@ -51,7 +49,7 @@ class Robot:
         self.control_motor(self.motor_direction)
         self.control_servo(self.servo_angle)
         self.control_vacuum_pump(self.vacuum_pump_on)
-
+"""
 # Set up NEAT configuration
 config = neat.config.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, 'config.txt')
 
@@ -103,3 +101,4 @@ with open('kurma_model.pkl', 'wb+') as output:
 
 # Implement robot control logic using the winning genome
 # You can use the Robot class to control the robot with the winning genome.
+"""
