@@ -93,7 +93,7 @@ class AfloatCylinderEnv(gym.Env):
     def close(self):
         pygame.quit()
 
-if __name__ == "__main__":
+def run():
     env = AfloatCylinderEnv()
     for episode in range(10):
         observation = env.reset()
